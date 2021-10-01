@@ -1,0 +1,116 @@
+<body>
+    <div class="top-bar">
+        <h1>
+            Meu Forum
+        </h1>
+    </div>
+    <div class="main">
+        <div class="header">
+            <h4 class='title'>
+                Teste 2
+                </h4>
+                <div class="bottom">
+                    <p class="timestamp">
+                    01/04/2021
+                    </p>
+                    <p class="comment-count">
+                    4 comments
+                    </p>
+
+                </div>      
+        </div>
+        <textarea></textarea>
+        <button>Adicione um comentário</button>
+        <div class="comments">
+            <div class="comment">
+                <div class="top-comment">
+                <p class="user">
+                    Eduardo
+                </p>
+                <p class="timestamp">
+                    01/04/2021
+                </p>
+                
+                </div>
+                <div class="comment-content">
+                        comentario do texto
+                </div>
+            </div>
+            <div class="comment">
+                <div class="top-comment">
+                <p class="user">
+                    Eduardo
+                </p>
+                <p class="timestamp">
+                    01/04/2021
+                </p>
+                
+                </div>
+                <div class="comment-content">
+                        comentario do texto
+                </div>
+            </div>
+      </div>
+   </div>
+   <script src="data.js"></script>
+   <script>
+       var id = window.location.search.slice(1);
+       var thread = threads.find(t => t.id == id);
+       console.log(thread);
+   </script>
+    <style>
+        body {
+            margin: 10px 60px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        h1, h4, ol {
+            margin: 0;
+        }
+
+        p {
+            margin: 5px 0;
+        }
+        textarea {
+            width: 80%;
+            height: 80px;
+        }
+        button {
+            display: block;
+            margin: 10px 0;
+        }
+        .top-bar {
+            background-color: rgb(38, 73, 231);
+            padding: 0 40px;
+        }
+
+        .main {
+            background-color: #f6f6ef;
+            padding: 10px 15px;
+        }
+        .comments {
+            margin: 40px 0;
+        }
+        .comment {
+            margin: 10px 0;
+        }
+        .row {
+            padding: 5px 0;
+        }
+
+        .bottom, .top-comment {
+            display: flex;
+            color: gray;
+            font-size: 12px;
+
+        }
+
+        .timestamp {
+            padding-right: 10px;
+        }
+    </style>    
+</body>
